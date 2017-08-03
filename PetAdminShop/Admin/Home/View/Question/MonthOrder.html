@@ -1,0 +1,72 @@
+<div class="main">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <!--<h3 class="page-header"><i class="fa fa-laptop"></i> 主页</h3>-->
+            <ol class="breadcrumb">
+                <li><i class="fa fa-home"></i><a href="{:U('Login/Home')}">主页</a></li>
+                <li><i class="fa fa-trophy"></i>问答管理</li>
+                <li><i class="fa fa-location-arrow"></i>月排行</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+
+                    <div class="col-lg-6 col-md-12">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2><i class="fa fa-spinner red"></i><strong>月排行(本月度共有{$count}位用户参与答题)</strong></h2>
+                                <div class="panel-actions">
+                                    <a href="javascript:void(0);" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+                                    <a href="javascript:void(0);" class="btn-close"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="tasks">
+                                        <table class="table bootstrap-datatable datatable small-font">
+                                            <thead>
+                                            <tr>
+                                                <th>答题数</th>
+                                                <th>用户</th>
+                                                <th>进度</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <foreach name="data" item="vo">
+                                            <tr>
+                                                <td>{$vo.true_count}</td>
+                                                <td>{$vo.username}</td>
+                                                <td>
+                                                    <div class="progress thin">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{$vo.true_count}" aria-valuemin="0" aria-valuemax="100" style="width:{$vo.true_count}%">
+                                                            <span class="sr-only">73% Complete (success)</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </foreach>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!--/col-->
+            </div>
+        </div><!--/col-->
+
+    </div><!--/row-->
+
+    <script>
+
+
+    </script>
+
+</div>

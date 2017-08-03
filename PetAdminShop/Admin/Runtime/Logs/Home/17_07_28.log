@@ -1,0 +1,14 @@
+[ 2017-07-28T14:33:36+08:00 ] 127.0.0.1 /admin.php/Home/Login/HomeGoodsInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PetAdmin\PetAdminShop\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.007001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `create_time` BETWEEN '1501171200' AND '1501257600' AND `status` = 2 LIMIT 1   [ RunTime:0.031002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+

@@ -1,0 +1,186 @@
+<div class="main">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <!--<h3 class="page-header"><i class="fa fa-laptop"></i> 主页</h3>-->
+            <ol class="breadcrumb">
+                <li><i class="fa fa-home"></i><a href="{:U('Login/Home')}">主页</a></li>
+                <li><i class="fa fa-user"></i>个人中心</li>
+            </ol>
+        </div>
+    </div>
+
+    <div id="tip"></div>
+
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2><i class="fa fa-indent red"></i><strong>个人中心</strong></h2>
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal">
+                    <br><br>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">用户账号</label>
+                        <div class="col-md-9">
+                            <p class="form-control-static"><?php foreach($data as $key=>$val){ echo $val['username'];}?></p>
+                        </div>
+                    </div>
+                    <p></p>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">当前职务</label>
+                        <div class="col-md-9">
+                            <p class="form-control-static">
+                                <?php foreach($data as $key=>$val){
+                                    foreach($val['role_name'] as $kk=>$vv){
+                                    echo "<span class='label label-warning'>".$vv."</span>";
+                                }
+                                }?>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="OldPass">旧密码</label>
+                        <div class="col-md-2">
+                            <input type="password" id="OldPass" name="OldPass" class="form-control" placeholder="旧密码">
+                        </div>
+                    </div>
+                    <p></p>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="NewPass">新密码</label>
+                        <div class="col-md-2">
+                            <input type="password" id="NewPass" name="NewPass" class="form-control" placeholder="新密码">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="InCode">  验证码 </label>
+                        <div>
+                            <input type="text" id="InCode" style=" margin-left:10px; width: 100px; height: 35px; border-radius: 6px; border:2px solid darkturquoise;" name="InCode" placeholder="&nbsp;&nbsp;&nbsp;验证码">
+                            <input type = "button" id="code" onclick="createCode()" style="font-family:Arial; font-style:italic; font-weight:bold;  border:0;  letter-spacing:5px;  color:blue; height: 35px;"/>
+                        </div>
+                    </div>
+                    <br>
+                    <div style="margin-left: 21%">
+                        <button type="button" class="btn btn-sm btn-success" onclick="UserSelfInfoSave()"><i class="fa fa-dot-circle-o"></i> 提交</button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> 重置</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        function UserSelfInfoSave() {
+            var OldPass = document.getElementById('OldPass').value;
+            $.get("__MODULE__/Login/OldPassValidate/OldPass/"+OldPass,
+                    function(data,status){
+                        if(status=='success')
+                        {
+                            if(data.code==201){
+                                $("#tip").empty();
+                                $("#tip").append('<div class="alert alert-danger"> <button type="button" class="close" data-dismiss="alert">×</button> <strong>Error!</strong> '+data.msg+'</div>');
+                                return false;
+                            }else{
+                                $("#tip").empty();
+                                NewPassValidate();
+                            }
+                        }else{
+                            $("#tip").empty();
+                            $("#tip").append('<div class="alert alert-danger"> <button type="button" class="close" data-dismiss="alert">×</button> <strong>Error!</strong> 网络出错!</div>');
+                            return false;
+                        }
+                    },'json'
+            );
+
+
+        }
+
+
+        //设置一个全局的变量，便于保存验证码
+        var code;
+        function createCode(){
+            //首先默认code为空字符串
+            code = '';
+            //设置长度，这里看需求，我这里设置了4
+            var codeLength = 4;
+            var codeV = document.getElementById('code');
+            //设置随机字符
+            var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R', 'S','T','U','V','W','X','Y','Z');
+            //循环codeLength 我设置的4就是循环4次
+            for(var i = 0; i < codeLength; i++){
+                //设置随机数范围,这设置为0 ~ 36
+                var index = Math.floor(Math.random()*36);
+                //字符串拼接 将每次随机的字符 进行拼接
+                code += random[index];
+            }
+            //将拼接好的字符串赋值给展示的Value
+            codeV.value = code;
+        }
+
+        //下面就是判断是否== 的代码，无需解释
+        function validate(){
+            var oValue = document.getElementById('InCode').value.toUpperCase();
+            if(oValue ==0){
+                $("#tip").empty();
+                $("#tip").append('<div class="alert alert-danger"> <button type="button" class="close" data-dismiss="alert">×</button> <strong>Error!</strong> 请输入验证码!</div>');
+                return false;
+            }else if(oValue != code){
+                $("#tip").empty();
+                $("#tip").append('<div class="alert alert-danger"> <button type="button" class="close" data-dismiss="alert">×</button> <strong>Error!</strong> 验证码不正确!</div>');
+                oValue = ' ';
+                createCode();
+                return false;
+            }else{
+                $("#tip").empty();
+                return true;
+            }
+        }
+
+        //设置此处的原因是每次进入界面展示一个随机的验证码，不设置则为空
+        window.onload = function (){
+
+            createCode();
+        }
+        
+        function NewPassValidate() {
+            var NewPass = $.trim($("#NewPass").val());
+            if(NewPass.length<=0){
+                $("#tip").empty();
+                $("#tip").append('<div class="alert alert-danger"> <button type="button" class="close" data-dismiss="alert">×</button> <strong>Error!</strong> 新密码不能为空!</div>');
+                return false;
+            }else{
+                $("#tip").empty();
+                validate();
+
+                $.get("__MODULE__/Login/UserSelfInfoSave/NewPass/"+NewPass,
+                    function(data,status){
+                        if(status='success'){
+                            if(data.code==200){
+                                alert(data.msg);
+                            }else{
+                                $("#tip").empty();
+                                $("#tip").append('<div class="alert alert-danger"> <button type="button" class="close" data-dismiss="alert">×</button> <strong>Error!</strong>'+data.msg+'</div>');
+                                createCode();
+                                return false;
+                            }
+                        }else{
+                            $("#tip").empty();
+                            $("#tip").append('<div class="alert alert-danger"> <button type="button" class="close" data-dismiss="alert">×</button> <strong>Error!</strong> 网络中断了,尝试一下重新提交吧!</div>');
+                            createCode();
+                            return false;
+                        }
+                    },'json'
+                );
+
+            }
+
+        }
+
+
+    </script>
+
+</div>

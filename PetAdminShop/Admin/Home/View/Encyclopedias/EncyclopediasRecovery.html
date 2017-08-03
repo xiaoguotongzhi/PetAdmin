@@ -1,0 +1,105 @@
+<div class="main">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <!--<h3 class="page-header"><i class="fa fa-laptop"></i> 主页</h3>-->
+            <ol class="breadcrumb">
+                <li><i class="fa fa-home"></i><a href="{:U('Login/Home')}">主页</a></li>
+                <li><i class="fa fa-trophy"></i>百科管理</li>
+                <li><i class="fa fa-location-arrow"></i>审核回收站</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2><i class="fa fa-table red"></i><span class="break"></span><strong>审核回收站</strong></h2>
+                    <div class="panel-actions">
+                        <a href="javascript:void(0);" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+                        <a href="javascript:void(0);" class="btn-close"><i class="fa fa-times"></i></a>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-striped table-bordered bootstrap-datatable datatable">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>标题</th>
+                            <th>奖励</th>
+                            <th>内容</th>
+                            <th>奖励状态</th>
+                            <th>文章状态</th>
+                            <th>分享</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <foreach name="data" item="vo">
+                            <tr>
+                                <td>{$vo.id}</td>
+                                <td>{$vo.title}</td>
+                                <td>{$vo.reward}</td>
+                                <td title="{$vo.content}">
+                                    <?php
+                            if(strlen($vo['content'])>=20){
+                                    echo mb_substr($vo['content'],0,20,'utf-8').'...';
+                                    }else{
+                                    echo $vo['content'];
+                                    }
+                                    ?>
+                                </td>
+                                <td>
+                                    <if condition="$vo.reward_status eq 1"><span class="label label-default">未奖励</span>
+                                        <elseif condition="$vo.reward_status eq 2"/><span class="label label-success">已奖励</span>
+                                        <elseif condition="$vo.reward_status eq 3"/><span class="label label-danger">不奖励</span>
+                                    </if>
+                                </td>
+                                <td>
+                                    <if condition="$vo.content_status eq 1"><span class="label label-warning">通过</span>
+                                        <else /><span class="label label-warning">未通过</span>
+                                    </if>
+                                </td>
+                                <td>
+                                    {$vo.share_num}
+                                </td>
+                                <td>
+                                    <!--<a class="btn btn-success" href="javascript:void(0);" title="通过" onclick="EBok({$vo.id})">-->
+                                        <!--<i class="fa fa-thumbs-o-up "></i>-->
+                                    <!--</a>-->
+                                    <!--&nbsp;&nbsp;&nbsp;&nbsp;-->
+                                    <!--<a class="btn btn-info" href="javascript:void(0);" title="拒绝" onclick="EBno({$vo.id},{$vo.author_id})">-->
+                                        <!--<i class="fa fa-thumbs-o-down "></i>-->
+                                    <!--</a>-->
+                                    <!--&nbsp;&nbsp;&nbsp;&nbsp;-->
+                                    <a class="btn btn-danger" href="javascript:void(0);" title="删除" onclick="EBde({$vo.id});">
+                                    <i class="fa fa-trash-o "></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </foreach>
+                        </tbody>
+                    </table>
+                    {$page}
+                </div>
+            </div>
+        </div><!--/col-->
+
+    </div><!--/row-->
+</div>
+<script>
+
+        function EBde(Id) {
+
+            mizhu.confirm('温馨提醒', '确定要删除吗？', function() {
+                $.get("__URL__/EBde/id/" + Id,
+                        function (data, status) {
+                            if (status == 'success') {
+                                history.go(0)
+                            }
+                        }, 'json'
+                );
+            });
+        }
+</script>

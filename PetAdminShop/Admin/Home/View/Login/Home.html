@@ -1,0 +1,75 @@
+<div class="main">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="breadcrumb">
+                <div id="div" style="overflow:hidden;">
+                    <p><i class="fa fa-volume-up"></i>&nbsp;&nbsp;&nbsp;&nbsp;请使用IE内核10以上的浏览器！</p>
+                    <p><i class="fa fa-volume-up"></i>&nbsp;&nbsp;&nbsp;&nbsp;请正确退出后台，否则个人信息可能会被泄漏！</p>
+                    <p><i class="fa fa-volume-up"></i>&nbsp;&nbsp;&nbsp;&nbsp;后台使用过程中若出现菜单问题，请刷新重试！</p>
+                    <p><i class="fa fa-volume-up"></i>&nbsp;&nbsp;&nbsp;&nbsp;建议使用百度浏览器、IE10浏览器或者360浏览器！</p>
+                    <p><i class="fa fa-volume-up"></i>&nbsp;&nbsp;&nbsp;&nbsp;若出现左侧菜单滑动问题可以尝试点击主页解决！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--这个布局怎么这么绕，都要把我绕晕了。。。-->
+
+    <div class="alert alert-warning" style="height: 300px;">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <h4 class="alert-heading">系统公告</h4>
+        <p>1.请使用IE内核10以上的浏览器</p>
+        <p>2.请正确退出后台，否则个人信息可能会被泄漏</p>
+        <p>3.后台使用过程中若出现菜单问题，请刷新重试</p>
+        <p>4.建议使用百度浏览器、IE10浏览器或者360浏览器</p>
+        <p>5.若出现左侧菜单滑动问题可以尝试点击主页解决</p>
+    </div>
+
+    <div id="pay-module">
+        <ul>
+            <li onclick='window.location.href="__MODULE__/Orders/OrdersLists"'>
+                <h4>今日订单</h4>
+                <h1 id="t_sn">{$data.count}</h1>
+            </li>
+            <li onclick='window.location.href="__MODULE__/Orders/OrdersLists"'>
+                <h4>已付款</h4>
+                <h1 id="is_pay">{$data.is_pay}</h1>
+            </li>
+            <li onclick='window.location.href="__MODULE__/Orders/OrdersLists"'>
+                <h4>已发货</h4>
+                <h1 id="is_fa">{$data.is_fa}</h1>
+            </li>
+        </ul>
+    </div>
+
+    <div style="display: none" id="audio_load">
+        <audio src="__PUBLIC__/Music/2.wav" id="bo"></audio>
+    </div>
+
+</div>
+
+
+<script>
+    window.onload = funcTest;
+    function funcTest() {
+        window.setInterval("timelyFun()",5000);
+    }
+
+    function timelyFun() {
+        $.get(
+                "__URL__/HomeGoodsInfo",
+                function(data,status){
+                    if(status=='success'){
+                        if(data.code==200){
+                            if(data.data>0){
+                                var audio = document.getElementById('bo');
+                                audio.play();
+                            }
+                        }else{
+                            mizhu.toast('网络错误...');
+                        }
+                    }
+                },'json'
+        );
+    }
+</script>
