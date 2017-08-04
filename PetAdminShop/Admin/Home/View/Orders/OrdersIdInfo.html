@@ -1,0 +1,229 @@
+<div class="main">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <!--<h3 class="page-header"><i class="fa fa-laptop"></i> 主页</h3>-->
+            <ol class="breadcrumb">
+                <li><i class="fa fa-home"></i><a href="{:U('Login/Home')}">主页</a></li>
+                <li><i class="fa fa-trophy"></i>商户管理</li>
+                <li><i class="fa fa-location-arrow"></i>订单详情</li>
+            </ol>
+        </div>
+    </div>
+    <div id="tip"></div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2><i class="fa fa-indent red"></i><strong>订单详情</strong></h2>
+                </div>
+                <div class="panel-body">
+                        <br><br>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">商品图片</label>
+                            <div class="col-md-9">
+                                <img src="{$data.goods_img}">
+                            </div>
+                        </div>
+
+                    <table class="table table-striped table-bordered bootstrap-datatable datatable">
+
+
+                        <thead>
+                        <tr>
+                            <th>商品名称</th>
+                            <th>商品颜色</th>
+                            <th>商品数量</th>
+                            <th>商品价格</th>
+                            <th>商品品牌</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>{$data.goods_name}</td>
+                            <td>{$data.goods_color}</td>
+                            <td>{$data.goods_num}</td>
+                            <td>{$data.goods_price}</td>
+                            <td>{$data.goods_brand}</td>
+                        </tr>
+                        </tbody>
+
+
+                        <thead>
+                            <tr>
+                                <th>下单用户</th>
+                                <th>订单号</th>
+                                <th>收货人</th>
+                                <th>手机号</th>
+                                <th>创建时间</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{$username}</td>
+                                <td>{$data.order_sn}</td>
+                                <td>{$data.username}</td>
+                                <td>{$data.phone}</td>
+                                <td><?php echo date('Y-m-d H:i:s',$data['create_time'])?></td>
+                            </tr>
+                        </tbody>
+
+
+                        <thead>
+                        <tr>
+                            <th>所在区域</th>
+                            <th colspan="4">{$data.area}</th>
+                        </tr>
+                        </thead>
+
+                        <thead>
+                        <tr>
+                            <th>详细地址</th>
+                            <th colspan="4">{$data.address}</th>
+                        </tr>
+                        </thead>
+
+
+                        <thead>
+                        <tr>
+                            <th colspan="2">商品规格</th>
+                            <th>支付时间</th>
+                            <th>支付方式</th>
+                            <th>订单状态</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td colspan="2">{$data.goods_content}</td>
+                            <td>
+                                <?php
+                                if(empty($data['pay_time'])){
+                                    echo "未检测到信息";
+                                }else{
+                                    echo date('Y:m:d H:i:s',$data['pay_time']);
+                                }
+                                ?>
+                            </td>
+                            <td>
+                                <if condition="$data.pay_status eq 1"> 微信
+                                    <elseif condition="$data.pay_status eq 2"/>支付宝
+                                    <else /> ERROR
+                                </if></td>
+                            <td>
+                                <input type="hidden" name="status" id="status" value="{$data.status}">
+                                <if condition="$data.status eq 1"> 未付款
+                                    <elseif condition="$data.status eq 2"/>已付款
+                                    <elseif condition="$data.status eq 3"/>已发货
+                                    <elseif condition="$data.status eq 4"/>已收货
+                                    <elseif condition="$data.status eq 9"/>问题件
+                                    <else /> ERROR
+                                </if>
+                            </td>
+                        </tr>
+                        </tbody>
+
+                        <thead>
+                        <tr>
+                            <th>备注</th>
+                            <th colspan="4">
+                                <?php
+                                if(empty($data['remarks'])){
+                                    echo "未检测到信息";
+                                }else{
+                                    echo $data['remarks'];
+                                }
+                                ?>
+                            </th>
+                        </tr>
+                        </thead>
+
+
+                    </table>
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+
+                    <if condition="$data.status eq 3"><div>*您已发货：物流单号为：<span style="margin-left: 10px; font-size: 16px; color: red">{$data.delivery_sn}</span>&nbsp;&nbsp;&nbsp;&nbsp;快递公司代号为：<span style="margin-left: 10px; font-size: 16px; color: red">{$data.com}</span></div>
+                        <else /> <form class="form-horizontal ">
+
+                            <div style="margin-left: 21%">
+                                <font color="red">*请您慎重填写</font>
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="delivery_sn">快递单号</label>
+                                <div class="col-md-3">
+                                    <input type="hidden" name="orders_id" id="orders_id" value="{$data.orders_id}">
+                                    <input type="text" id="delivery_sn" name="delivery_sn" class="form-control" placeholder="请填写快递单号">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="com">物流公司代号</label>
+                                <div class="col-md-3">
+                                    <input type="text" id="com" name="com" class="form-control" placeholder="请填写快递单号">
+                                </div>
+                            </div>
+
+                            <div style="margin-left: 26%">
+                                <button type="button" class="btn btn-sm btn-success" onclick="DeliverGoods()"><i class="fa fa-dot-circle-o"></i> 发货</button>
+                            </div>
+                            <br>
+                            <br>
+                        </form>
+                    </if>
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div><!--/.row-->
+
+    <script>
+        
+        
+        function DeliverGoods() {
+            var status = $.trim($("#status").val());
+            if(status==1){
+                mizhu.toast("订单未付款");
+                return false;
+            }
+
+            var orders_id = $.trim($("#orders_id").val());
+            var delivery_sn = $.trim($("#delivery_sn").val());
+            var com = $.trim($("#com").val());
+
+
+
+                $.post("__URL__/SendGoods",
+                    {
+                        id:orders_id,
+                        delivery_sn:delivery_sn,
+                        com:com
+                    },
+                    function(data,status){
+                        mizhu.toast(data.msg);
+                        history.go(-1);
+                        location.reload();
+
+                    },"json"
+                );
+
+
+
+        }
+
+
+    </script>
+
+</div>

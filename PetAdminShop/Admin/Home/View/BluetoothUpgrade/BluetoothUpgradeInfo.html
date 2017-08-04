@@ -1,0 +1,97 @@
+<div class="main">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <!--<h3 class="page-header"><i class="fa fa-laptop"></i> 主页</h3>-->
+            <ol class="breadcrumb">
+                <li><i class="fa fa-home"></i><a href="{:U('Login/Home')}">主页</a></li>
+                <li><i class="fa fa-trophy"></i>蓝牙管理</li>
+                <li><i class="fa fa-location-arrow"></i>版本文件记录</li>
+            </ol>
+        </div>
+    </div>
+
+    <div id="tip"></div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2><i class="fa fa-table red"></i><span class="break"></span><strong>短信统计</strong></h2>
+                    <div class="panel-actions">
+                        <a href="javascript:void(0);" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+                        <a href="javascript:void(0);" class="btn-close"><i class="fa fa-times"></i></a>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-striped table-bordered bootstrap-datatable datatable">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>版本号</th>
+                            <th>文件地址</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <foreach name="data" item="vo">
+                            <tr>
+                                <td>{$vo.id}</td>
+                                <td>
+                                    <input type="text" id="{$vo.id}" name="{$vo.id}" class="form-control" value="{$vo.edition}" size="12" onblur="BlueSave('{$vo.edition},{$vo.id},'+$(this).attr('name'));">
+                                    <!--onblur="BlueSave({$vo.edition},{$vo.id},$(this).attr('id'))"-->
+                                </td>
+                                <td>{$vo.upgrade_file}</td>
+                                <td>
+                                    <a class="btn btn-danger" href="javascript:void(0);" title="删除" onclick="BlueDel({$vo.id});">
+                                        <i class="fa fa-trash-o "></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </foreach>
+                        </tbody>
+                    </table>
+                    {$page}
+                </div>
+            </div>
+        </div><!--/col-->
+
+    </div><!--/row-->
+
+    <script>
+        function BlueSave(val) {
+            var result=val.split(",");
+            var MyArray = new Array();
+            for(var i=0;i<result.length;i++){
+                MyArray[i] = result[i];
+            }
+            var OldEdition = MyArray[0]; //老数据
+            var Id = MyArray[1];  //老数据id
+            var AttrName = MyArray[2];
+            var new_edition = $('input[name="'+AttrName+'"]').val();  //新数据
+
+            if(OldEdition!=new_edition){
+                $.get("__URL__/BluetoothInfoEdit/id/"+Id+"/NewEdition/"+new_edition,
+                    function(data,status){
+                        history.go(0);
+                    }
+                );
+            }
+            return true;
+
+
+        }
+
+        function BlueDel(Id) {
+
+            mizhu.confirm('温馨提醒', '确定要删除吗？', function() {
+                $.get("__URL__/BlueIdDel/id/" + Id,
+                        function (data, status) {
+                            history.go(0);
+                        }
+                );
+            });
+        }
+    </script>
+
+</div>

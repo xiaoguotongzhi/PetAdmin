@@ -1,0 +1,109 @@
+<div class="main">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <!--<h3 class="page-header"><i class="fa fa-laptop"></i> 主页</h3>-->
+            <ol class="breadcrumb">
+                <li><i class="fa fa-home"></i><a href="{:U('Login/Home')}">主页</a></li>
+                <li><i class="fa fa-trophy"></i>趣闻管理</li>
+                <li><i class="fa fa-location-arrow"></i>新增广告</li>
+            </ol>
+        </div>
+    </div>
+
+    <if condition="$num eq 1"> <div class="alert alert-success">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <strong>Success!</strong> 操作执行成功!
+    </div><script type="text/javascript">
+    location:reload();
+    </script>
+    <elseif condition="$num eq 2"/><div class="alert alert-danger">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <strong>Error!</strong> 操作执行失败!
+    </div>
+    <elseif condition="$num eq 3"/><div class="alert alert-info">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <strong>Help!</strong> 网络中断了,尝试一下重新提交吧!
+    </div>
+    <elseif condition="$num eq 4"/><div class="alert alert-warning">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <h4 class="alert-heading">Warning!</h4>
+    <p>请重新打开页面,不能重复提交数据哦~</p>
+    </div>
+    <else />
+    </if>
+
+    <div id="tip"></div>
+
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2><i class="fa fa-indent red"></i><strong>新增广告</strong></h2>
+            </div>
+            <div class="panel-body">
+                <form action="__URL__/JournalismBannerSub" method="post" enctype="multipart/form-data" class="form-horizontal " onsubmit="return JournalismBannerSub()">
+                    <br><br>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">广告文件</label>
+                        <div class="col-md-9">
+                            <!--<input type="file" id="img" name="img">-->
+
+                            <div class="fileInput left" style="width:102px;height:34px; background:url(__PUBLIC__/Images/upFileBtn.png);overflow:hidden;position:relative;">
+                                <input type="file" name="img" id="upfile" class="upfile" onchange="document.getElementById('upfileResult').innerHTML=this.value" style="position:absolute;top:-100px;"/>
+                                <input class="upFileBtn" type="button" value="上传图片" onclick="document.getElementById('upfile').click()" style="width:102px;height:34px;opacity:0;filter:alpha(opacity=0);cursor:pointer;" />
+                            </div>
+                            <span class="tip left" id="upfileResult">图片大小">图片大小不超过2M,支持jpg、png、bmp等格式。</span>
+
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="jid">趣闻ID</label>
+                        <div class="col-md-1">
+                            <?php $_SESSION['code']=mt_rand(1,1000);?>
+                            <input type="hidden" name="scode" value="<?php echo $_SESSION['code']?>" />
+                            <input type="text" id="jid" name="jid" class="form-control" placeholder="趣闻ID">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="title">广告语</label>
+                        <div class="col-md-5">
+                            <input type="text" id="title" name="title" class="form-control" placeholder="请输入广告语">
+                            <!--<span class="help-block">This is a help text</span>-->
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div style="margin-left: 21%">
+                        <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-dot-circle-o"></i> 提交</button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> 重置</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<script>
+    function JournalismBannerSub() {
+        var jid = $.trim($("#jid").val());
+        var title = $.trim($("#title").val());
+        if(jid.length<=0){
+            $("#tip").empty();
+            $("#tip").append('<div class="alert alert-danger"> <button type="button" class="close" data-dismiss="alert">×</button> <strong>Error!</strong>趣闻ID不能为空</div>');
+            return false;
+        }
+
+        if(title.length<=0){
+            $("#tip").empty();
+            $("#tip").append('<div class="alert alert-danger"> <button type="button" class="close" data-dismiss="alert">×</button> <strong>Error!</strong>广告语不能为空</div>');
+            return false;
+        }
+    }
+</script>

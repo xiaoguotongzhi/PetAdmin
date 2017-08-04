@@ -1,0 +1,1584 @@
+[ 2017-07-26T15:50:00+08:00 ] 111.206.36.135 /admin.php/Home/Login/Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Undefined index: username /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/LoginController.class.php 第 38 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000495s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = null LIMIT 1   [ RunTime:0.000081s ]
+
+[ 2017-07-26T15:50:00+08:00 ] 111.206.36.135 /admin.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000144s ]
+
+[ 2017-07-26T17:45:19+08:00 ] 113.45.44.154 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-07-26T17:45:22+08:00 ] 113.45.44.154 /admin.php/Home/Login/LoginVerification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000519s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_user` WHERE `username` = 'tianxunhulian' AND `password` = 'dGlhbnh1bmh1bGlhbg==' LIMIT 1   [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2017-07-26T17:45:22+08:00 ] 113.45.44.154 /admin.php/Home/Login/Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000435s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.000442s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `create_time` BETWEEN '1500998400' AND '1501084800' LIMIT 1   [ RunTime:0.000257s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `create_time` BETWEEN '1500998400' AND '1501084800' AND `status` = 2 LIMIT 1   [ RunTime:0.000189s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `create_time` BETWEEN '1500998400' AND '1501084800' AND `status` = 3 LIMIT 1   [ RunTime:0.000173s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2017-07-26T17:45:22+08:00 ] 113.45.44.154 /admin.php/Home/Login/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000091s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000080s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000059s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000063s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000085s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000058s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000054s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000076s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000084s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000078s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000081s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000063s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-07-26T17:45:27+08:00 ] 113.45.44.154 /admin.php/Home/Orders/OrdersLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000510s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000069s ]
+NOTIC: [8] Undefined index: page /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/OrdersController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.000450s ]
+SQL: SELECT * FROM `orders`  [ RunTime:0.000331s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: word /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/769db37f2a5bc02ff3307608a6cc0b4a.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2017-07-26T17:45:27+08:00 ] 113.45.44.154 /admin.php/Home/Orders/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000494s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000080s ]
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000094s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000056s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000060s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000082s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000070s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000057s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000055s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000054s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000051s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000052s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000054s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000068s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2017-07-26T17:45:29+08:00 ] 101.226.79.182 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-07-26T17:45:31+08:00 ] 113.45.44.154 /admin.php/Home/Orders/OrdersLists?page=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000468s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.000416s ]
+SQL: SELECT * FROM `orders`  [ RunTime:0.000113s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: word /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/769db37f2a5bc02ff3307608a6cc0b4a.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2017-07-26T17:45:31+08:00 ] 113.45.44.154 /admin.php/Home/Orders/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000487s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000073s ]
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000070s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000068s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000056s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000056s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000054s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000052s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000052s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000052s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000055s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000052s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000060s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000053s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2017-07-26T17:45:32+08:00 ] 101.226.33.206 /admin.php/Home/Login/Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+NOTIC: [8] Undefined index: username /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/LoginController.class.php 第 38 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000532s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = null LIMIT 1   [ RunTime:0.000068s ]
+
+[ 2017-07-26T17:45:34+08:00 ] 101.226.102.97 /admin.php/Home/Login/Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+NOTIC: [8] Undefined index: username /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/LoginController.class.php 第 38 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000463s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = null LIMIT 1   [ RunTime:0.000084s ]
+
+[ 2017-07-26T17:45:39+08:00 ] 113.45.44.154 /admin.php/Home/User/UserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000467s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000101s ]
+NOTIC: [8] Undefined index: page /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/UserController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000609s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.008292s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020191s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-07-26T17:45:39+08:00 ] 113.45.44.154 /admin.php/Home/User/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000550s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000071s ]
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000073s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000079s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000068s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000060s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000058s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000056s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000054s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000074s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000058s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000058s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000065s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000056s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2017-07-26T17:45:40+08:00 ] 101.226.33.217 /admin.php/Home/Orders/OrdersLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+NOTIC: [8] Undefined index: username /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/OrdersController.class.php 第 10 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000477s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = null LIMIT 1   [ RunTime:0.000070s ]
+NOTIC: [8] Undefined index: page /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/OrdersController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.000415s ]
+SQL: SELECT * FROM `orders`  [ RunTime:0.000114s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: word /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/769db37f2a5bc02ff3307608a6cc0b4a.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2017-07-26T17:45:42+08:00 ] 113.45.44.154 /admin.php/Home/User/UserInfo?page=62
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000496s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000636s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.000816s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-07-26T17:45:42+08:00 ] 113.45.44.154 /admin.php/Home/User/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000494s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000071s ]
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000082s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000072s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000054s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000057s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000056s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000054s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000069s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000061s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000055s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000054s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000055s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000055s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-07-26T17:45:55+08:00 ] 101.226.99.195 /admin.php/Home/User/UserInfo?page=62
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8] Undefined index: username /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/UserController.class.php 第 27 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000460s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = null LIMIT 1   [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000639s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.000780s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2017-07-26T17:46:05+08:00 ] 113.45.44.154 /admin.php/Home/User/UserCardList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000510s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000071s ]
+NOTIC: [8] Undefined index: page /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/UserController.class.php 第 60 行.
+SQL: SHOW COLUMNS FROM `card` [ RunTime:0.000315s ]
+SQL: SELECT * FROM `card` ORDER BY card_id desc  [ RunTime:0.000078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2017-07-26T17:46:06+08:00 ] 113.45.44.154 /admin.php/Home/User/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000540s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000069s ]
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000081s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000087s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000052s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000055s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000054s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000059s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000055s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000067s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000052s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000071s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000062s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000062s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2017-07-26T22:05:04+08:00 ] 123.118.21.158 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-07-26T22:05:26+08:00 ] 123.118.21.158 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-07-26T22:05:31+08:00 ] 123.118.21.158 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002722s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-07-26T22:05:47+08:00 ] 123.118.21.158 /admin.php/Home/Login/LoginVerification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000557s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_user` WHERE `username` = 'tianxunhulian' AND `password` = 'dGlhbnh1bmh1bGlhbg==' LIMIT 1   [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2017-07-26T22:05:47+08:00 ] 123.118.21.158 /admin.php/Home/Login/Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000405s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.000426s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `create_time` BETWEEN '1500998400' AND '1501084800' LIMIT 1   [ RunTime:0.000062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `create_time` BETWEEN '1500998400' AND '1501084800' AND `status` = 2 LIMIT 1   [ RunTime:0.000073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `create_time` BETWEEN '1500998400' AND '1501084800' AND `status` = 3 LIMIT 1   [ RunTime:0.000059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2017-07-26T22:05:47+08:00 ] 123.118.21.158 /admin.php/Home/Login/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000086s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000062s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000068s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000091s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000073s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000061s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000204s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000065s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000084s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000059s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000098s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000073s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-07-26T22:05:50+08:00 ] 123.118.21.158 /admin.php/Home/Orders/OrdersLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000507s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000086s ]
+NOTIC: [8] Undefined index: page /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/OrdersController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.000506s ]
+SQL: SELECT * FROM `orders`  [ RunTime:0.000110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined variable: word /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/769db37f2a5bc02ff3307608a6cc0b4a.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-07-26T22:05:50+08:00 ] 123.118.21.158 /admin.php/Home/Orders/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000480s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000075s ]
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000079s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000056s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000068s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000057s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000087s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000063s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000053s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000052s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000056s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000051s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000102s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000058s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-07-26T22:06:03+08:00 ] 123.118.21.158 /admin.php/Home/Orders/OrdersLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000470s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000099s ]
+NOTIC: [8] Undefined index: page /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/OrdersController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.000417s ]
+SQL: SELECT * FROM `orders`  [ RunTime:0.000108s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined variable: word /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/769db37f2a5bc02ff3307608a6cc0b4a.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-07-26T22:06:03+08:00 ] 123.118.21.158 /admin.php/Home/Orders/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000514s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000070s ]
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000070s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000057s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000065s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000055s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000055s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000053s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000051s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000053s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000051s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000054s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000071s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000057s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-07-26T22:06:13+08:00 ] 123.118.21.158 /admin.php/Home/Login/Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000477s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.000415s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `create_time` BETWEEN '1500998400' AND '1501084800' LIMIT 1   [ RunTime:0.000063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `create_time` BETWEEN '1500998400' AND '1501084800' AND `status` = 2 LIMIT 1   [ RunTime:0.000055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `create_time` BETWEEN '1500998400' AND '1501084800' AND `status` = 3 LIMIT 1   [ RunTime:0.000055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-07-26T22:06:13+08:00 ] 123.118.21.158 /admin.php/Home/Login/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000085s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000058s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000052s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000056s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000078s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000058s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000062s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000054s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000051s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000049s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000055s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000053s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-07-26T22:06:16+08:00 ] 123.118.21.158 /admin.php/Home/Orders/OrdersLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000570s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000095s ]
+NOTIC: [8] Undefined index: page /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/OrdersController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.000435s ]
+SQL: SELECT * FROM `orders`  [ RunTime:0.000123s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined variable: word /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/769db37f2a5bc02ff3307608a6cc0b4a.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000087s ]
+
+[ 2017-07-26T22:06:16+08:00 ] 123.118.21.158 /admin.php/Home/Orders/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000526s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000071s ]
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000074s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000057s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000054s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000081s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000065s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000056s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000054s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000055s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000053s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000052s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000055s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000055s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2017-07-26T22:06:21+08:00 ] 123.118.21.158 /admin.php/Home/Orders/AddShopBannerForm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000496s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000081s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/93884eb6fba9236a44d2df6c7e43805d.php 第 228 行.
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/93884eb6fba9236a44d2df6c7e43805d.php 第 234 行.
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/93884eb6fba9236a44d2df6c7e43805d.php 第 238 行.
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/93884eb6fba9236a44d2df6c7e43805d.php 第 242 行.
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/93884eb6fba9236a44d2df6c7e43805d.php 第 246 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2017-07-26T22:06:21+08:00 ] 123.118.21.158 /admin.php/Home/Orders/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000526s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000072s ]
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000078s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000083s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000058s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000072s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000056s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000055s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000098s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000059s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000052s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000065s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000086s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000059s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2017-07-26T22:06:29+08:00 ] 123.118.21.158 /admin.php/Home/Orders/ShopExamine
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000479s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000076s ]
+NOTIC: [8] Undefined index: page /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/OrdersController.class.php 第 240 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.000434s ]
+SQL: SELECT * FROM `shop`  [ RunTime:0.000100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined index: id /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/3483459e0e990c1a11c30ea2daa0aae4.php 第 271 行.
+NOTIC: [8] Undefined index: id /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/3483459e0e990c1a11c30ea2daa0aae4.php 第 271 行.
+NOTIC: [8] Undefined index: id /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/3483459e0e990c1a11c30ea2daa0aae4.php 第 271 行.
+NOTIC: [8] Undefined index: id /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/3483459e0e990c1a11c30ea2daa0aae4.php 第 271 行.
+NOTIC: [8] Undefined index: id /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/3483459e0e990c1a11c30ea2daa0aae4.php 第 271 行.
+NOTIC: [8] Undefined index: id /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/3483459e0e990c1a11c30ea2daa0aae4.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2017-07-26T22:06:29+08:00 ] 123.118.21.158 /admin.php/Home/Orders/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000531s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000102s ]
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000091s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000063s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000061s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000062s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000061s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000062s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000059s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000063s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000061s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000060s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000061s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000060s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2017-07-26T22:06:31+08:00 ] 101.226.33.218 /admin.php/home/orders/addshopbannerform
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined index: username /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/OrdersController.class.php 第 10 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000624s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = null LIMIT 1   [ RunTime:0.000068s ]
+ERR: 模板不存在:./Admin/Home/View/Orders/addshopbannerform.html
+
+[ 2017-07-26T22:06:35+08:00 ] 123.118.21.158 /admin.php/Home/Journalism/AddNewJournalismForm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000519s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000081s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/907c3a57224bd79bd98947043b53f188.php 第 227 行.
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/907c3a57224bd79bd98947043b53f188.php 第 233 行.
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/907c3a57224bd79bd98947043b53f188.php 第 237 行.
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/907c3a57224bd79bd98947043b53f188.php 第 241 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-07-26T22:06:35+08:00 ] 123.118.21.158 /admin.php/Home/Journalism/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000492s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000072s ]
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000084s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000134s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000059s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000058s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000058s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000056s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000070s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000059s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000056s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000054s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000057s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000056s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-07-26T22:06:37+08:00 ] 123.118.21.158 /admin.php/Home/Journalism/JournalismInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000510s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000071s ]
+NOTIC: [8] Undefined index: page /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/JournalismController.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `journalism` [ RunTime:0.000549s ]
+SQL: SELECT * FROM `journalism` ORDER BY jid desc  [ RunTime:0.015247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined variable: word /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/733e71715fffef4d14b3db4fef4eb561.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2017-07-26T22:06:37+08:00 ] 123.118.21.158 /admin.php/Home/Journalism/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000534s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000071s ]
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000071s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000055s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000051s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000080s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000076s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000059s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000053s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000053s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000050s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000050s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000070s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000056s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-07-26T22:06:40+08:00 ] 123.118.21.158 /admin.php/Home/Encyclopedias/AddNewEncyclopediasForm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000550s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000103s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/9e84bb7002e2d11d735fe7a9d6c98c80.php 第 226 行.
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/9e84bb7002e2d11d735fe7a9d6c98c80.php 第 232 行.
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/9e84bb7002e2d11d735fe7a9d6c98c80.php 第 236 行.
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/9e84bb7002e2d11d735fe7a9d6c98c80.php 第 240 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2017-07-26T22:06:40+08:00 ] 123.118.21.158 /admin.php/Home/Encyclopedias/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000703s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000096s ]
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000097s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000088s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000070s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000074s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000073s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000076s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000097s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000076s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000065s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000064s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000078s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000074s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
+[ 2017-07-26T22:06:43+08:00 ] 123.118.21.158 /admin.php/Home/Sms/SmsInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000491s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000072s ]
+NOTIC: [8] Undefined index: page /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/SmsController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `sms` [ RunTime:0.000396s ]
+SQL: SELECT * FROM `sms`  [ RunTime:0.000881s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2017-07-26T22:06:43+08:00 ] 123.118.21.158 /admin.php/Home/Sms/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000557s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000077s ]
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000081s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000066s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000069s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000066s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000063s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000069s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000061s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000060s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000057s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000055s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000075s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000082s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2017-07-26T22:06:45+08:00 ] 61.151.226.189 /admin.php/home/journalism/addnewjournalismform
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined index: username /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/JournalismController.class.php 第 16 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000501s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = null LIMIT 1   [ RunTime:0.000070s ]
+ERR: 模板不存在:./Admin/Home/View/Journalism/addnewjournalismform.html
+
+[ 2017-07-26T22:06:50+08:00 ] 140.207.124.105 /admin.php/home/encyclopedias/addnewencyclopediasform
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined index: username /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/EncyclopediasController.class.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000480s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = null LIMIT 1   [ RunTime:0.000064s ]
+ERR: 模板不存在:./Admin/Home/View/Encyclopedias/addnewencyclopediasform.html
+
+[ 2017-07-26T22:06:53+08:00 ] 101.226.64.177 /admin.php/home/sms/smsinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined index: username /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/SmsController.class.php 第 9 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000551s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = null LIMIT 1   [ RunTime:0.000073s ]
+NOTIC: [8] Undefined index: page /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/SmsController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `sms` [ RunTime:0.000514s ]
+SQL: SELECT * FROM `sms`  [ RunTime:0.000362s ]
+ERR: 模板不存在:./Admin/Home/View/Sms/smsinfo.html
+
+[ 2017-07-26T22:06:56+08:00 ] 123.118.21.158 /admin.php/Home/AdminUser/AddAdminUserForm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000575s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.000367s ]
+SQL: SELECT * FROM `admin_role`  [ RunTime:0.000085s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/7e3a4d9e0d325400e3b5f536a8649cf7.php 第 229 行.
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/7e3a4d9e0d325400e3b5f536a8649cf7.php 第 235 行.
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/7e3a4d9e0d325400e3b5f536a8649cf7.php 第 239 行.
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/7e3a4d9e0d325400e3b5f536a8649cf7.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2017-07-26T22:06:56+08:00 ] 123.118.21.158 /admin.php/Home/AdminUser/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000540s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000087s ]
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000099s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000091s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000064s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000067s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000060s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000059s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000069s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000064s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000077s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000061s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000077s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000062s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-07-26T22:06:59+08:00 ] 123.118.21.158 /admin.php/Home/AdminUser/AddPositionForm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000494s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `admin_jurisdiction` [ RunTime:0.000334s ]
+SQL: SELECT * FROM `admin_jurisdiction` WHERE ( pid=0 )  [ RunTime:0.000227s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/57e1e5ccd98fa5fe18227e53dbaffdb6.php 第 228 行.
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/57e1e5ccd98fa5fe18227e53dbaffdb6.php 第 234 行.
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/57e1e5ccd98fa5fe18227e53dbaffdb6.php 第 238 行.
+NOTIC: [8] Undefined variable: num /data/wwwroot/PetAdmin/PetAdminShop/Admin/Runtime/Cache/Home/57e1e5ccd98fa5fe18227e53dbaffdb6.php 第 242 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023161s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2017-07-26T22:06:59+08:00 ] 123.118.21.158 /admin.php/Home/AdminUser/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000502s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000070s ]
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000071s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000080s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000056s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000059s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000056s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000054s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000053s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000054s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000052s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000052s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000059s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000058s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-07-26T22:07:02+08:00 ] 123.118.21.158 /admin.php/Home/AdminUser/AddPositionInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000792s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000107s ]
+NOTIC: [8] Undefined index: page /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/AdminUserController.class.php 第 261 行.
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `admin_role_jurisdiction` [ RunTime:0.000294s ]
+SQL: SELECT * FROM `admin_role`  [ RunTime:0.000103s ]
+SQL: SELECT * FROM `admin_role_jurisdiction` INNER JOIN admin_jurisdiction ON admin_role_jurisdiction.jurisdiction_id = admin_jurisdiction.j_id  WHERE ( role_id=1 )  [ RunTime:0.000078s ]
+SQL: SELECT * FROM `admin_role_jurisdiction` INNER JOIN admin_jurisdiction ON admin_role_jurisdiction.jurisdiction_id = admin_jurisdiction.j_id  WHERE ( role_id=35 )  [ RunTime:0.000070s ]
+SQL: SELECT * FROM `admin_role_jurisdiction` INNER JOIN admin_jurisdiction ON admin_role_jurisdiction.jurisdiction_id = admin_jurisdiction.j_id  WHERE ( role_id=50 )  [ RunTime:0.000071s ]
+SQL: SELECT * FROM `admin_role_jurisdiction` INNER JOIN admin_jurisdiction ON admin_role_jurisdiction.jurisdiction_id = admin_jurisdiction.j_id  WHERE ( role_id=51 )  [ RunTime:0.000062s ]
+SQL: SELECT * FROM `admin_role_jurisdiction` INNER JOIN admin_jurisdiction ON admin_role_jurisdiction.jurisdiction_id = admin_jurisdiction.j_id  WHERE ( role_id=52 )  [ RunTime:0.000070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2017-07-26T22:07:03+08:00 ] 123.118.21.158 /admin.php/Home/AdminUser/MenuLists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000490s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000070s ]
+SQL: select admin_jurisdiction.* from admin_user,admin_user_role,admin_role_jurisdiction,admin_jurisdiction
+                where admin_user.id=admin_user_role.user_id
+                and admin_user_role.role_id=admin_role_jurisdiction.role_id
+                and admin_role_jurisdiction.jurisdiction_id=admin_jurisdiction.j_id
+                and admin_user.username='tianxunhulian' [ RunTime:0.000081s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 1 [ RunTime:0.000058s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 2 [ RunTime:0.000055s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 3 [ RunTime:0.000057s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 4 [ RunTime:0.000054s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 5 [ RunTime:0.000053s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 6 [ RunTime:0.000053s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 7 [ RunTime:0.000053s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 8 [ RunTime:0.000055s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 9 [ RunTime:0.000053s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 10 [ RunTime:0.000057s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 42 [ RunTime:0.000054s ]
+SQL: SELECT * FROM admin_jurisdiction WHERE pid = 46 [ RunTime:0.000054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2017-07-26T22:07:06+08:00 ] 101.226.65.102 /admin.php/home/adminuser/addadminuserform
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载控制器:Adminuser
+
+[ 2017-07-26T22:07:09+08:00 ] 180.163.1.46 /admin.php/home/adminuser/addpositionform
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载控制器:Adminuser
+
+[ 2017-07-26T22:07:12+08:00 ] 101.226.33.223 /admin.php/home/adminuser/addpositioninfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+ERR: 无法加载控制器:Adminuser
+
+[ 2017-07-26T22:11:43+08:00 ] 123.118.21.158 /admin.php/Home/AdminUser/LogOut
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000507s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'tianxunhulian' LIMIT 1   [ RunTime:0.000068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2017-07-26T22:11:43+08:00 ] 123.118.21.158 /admin.php/Home/AdminUser/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8] Undefined index: username /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/AdminUserController.class.php 第 8 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000429s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = null LIMIT 1   [ RunTime:0.000065s ]
+ERR: 模板不存在:./Admin/Home/View/AdminUser/index.html
+
+[ 2017-07-26T22:11:44+08:00 ] 123.118.21.158 /admin.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
+
+[ 2017-07-26T22:11:54+08:00 ] 101.226.33.202 /admin.php/home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2017-07-26T22:16:04+08:00 ] 61.151.226.199 /admin.php/home/adminuser/addpositionform
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载控制器:Adminuser
+
+[ 2017-07-26T22:17:57+08:00 ] 101.226.64.177 /admin.php/home/adminuser/addpositioninfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载控制器:Adminuser
+
+[ 2017-07-26T22:20:20+08:00 ] 101.226.65.102 /admin.php/home/sms/smsinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+NOTIC: [8] Undefined index: username /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/SmsController.class.php 第 9 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/wwwroot/PetAdmin/PetAdminShop/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.000497s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = null LIMIT 1   [ RunTime:0.000068s ]
+NOTIC: [8] Undefined index: page /data/wwwroot/PetAdmin/PetAdminShop/Admin/Home/Controller/SmsController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `sms` [ RunTime:0.000367s ]
+SQL: SELECT * FROM `sms`  [ RunTime:0.000328s ]
+ERR: 模板不存在:./Admin/Home/View/Sms/smsinfo.html
+
