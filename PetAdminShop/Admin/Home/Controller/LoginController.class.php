@@ -48,10 +48,20 @@ class LoginController extends Controller {
         //当日0点的时间
         $dateStr = date('Y-m-d', time());
         $timestamp0 = strtotime($dateStr);
-
         //当日24点的时间
         $timestamp24 = strtotime($dateStr) + 86400;
+
+        //昨日0点和24点的时间
+        $beginYesterday= mktime(0,0,0,date('m'),date('d')-1,date('Y'));
+        $endYesterday= mktime(0,0,0,date('m'),date('d'),date('Y'))-1;
+
         $model = M("orders");
+        $model2 = M("home_click_count");
+        $model3 = M("help");
+        $model4 = M("card");
+        $model5 = M("question");
+        $model6 = M("encyclopedias");
+
         $map['create_time']  = array('between',"$timestamp0,$timestamp24");
         $count = $model->where($map)->count();
 
@@ -63,9 +73,38 @@ class LoginController extends Controller {
         $dat['status'] = 3;
         $is_fa = $model->where($dat)->count();
 
-        $res['count'] = $count;
-        $res['is_pay'] = $is_pay;
-        $res['is_fa'] = $is_fa;
+        $where2['create_time']  = array('between',"$timestamp0,$timestamp24");
+        $today_look_count = $model2->where($where2)->count();
+
+        $where3['create_time']  = array('between',"$beginYesterday,$endYesterday");
+        $yesterday_look_count = $model2->where($where3)->count();
+
+        $where4['create_time']  = array('between',"$timestamp0,$timestamp24");
+        $help_count = $model3->where($where4)->count();
+
+        $where5['create_time']  = array('between',"$timestamp0,$timestamp24");
+        $card_count = $model4->where($where5)->count();
+
+        $where6['create_time']  = array('between',"$timestamp0,$timestamp24");
+        $where6['is_pet'] = 2;
+        $question_count = $model5->where($where6)->count();
+
+
+        $where7['create_time']  = array('between',"$timestamp0,$timestamp24");
+        $where7['content_status'] = 2;
+        $encyclopedias_count = $model6->where($where7)->count();
+
+
+
+        $res['count'] = $count; //今日订单总数
+        $res['is_pay'] = $is_pay; //已付款
+        $res['is_fa'] = $is_fa; //已发货
+        $res['yesterday_look_count'] = $yesterday_look_count; //昨天访问量
+        $res['today_look_count'] = $today_look_count; //今日访问量
+        $res['help_count'] = $help_count; //今日帮助与反馈计数
+        $res['card_count'] = $card_count; //身份认证数量
+        $res['question_count'] = $question_count; //宠友出题
+        $res['encyclopedias_count'] = $encyclopedias_count; //百科问答
 
 
         $this->assign('data',$res);
